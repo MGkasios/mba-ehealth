@@ -1,0 +1,13 @@
+name: Dapr
+description: Dapr SDK
+group-id: io.quarkiverse.dapr
+artifact-id: quarkus-dapr
+metadata:
+  keywords:
+    - dapr
+    - multi-runtime
+    - sidecar
+  guide: "https://quarkiverse.github.io/quarkiverse-docs/quarkus-dapr/dev/index.html"
+  categories:
+    - "miscellaneous"
+  status: "preview"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.quarkiverse.dapr</groupId>
+        <artifactId>quarkus-dapr-parent</artifactId>
+        <version>1.0.5-SNAPSHOT</version>
+    </parent>
+    <artifactId>ehealth-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>eHealth</name>
+    <modules>
+        <module>commons</module>
+        <module>exams</module>
+        <module>permissions</module>
+        <module>notifications</module>
+        <module>notifications-email</module>
+        <module>users</module>
+    </modules>
+</project>
