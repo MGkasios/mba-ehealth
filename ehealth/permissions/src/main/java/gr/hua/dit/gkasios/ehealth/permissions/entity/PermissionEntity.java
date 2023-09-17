@@ -54,7 +54,6 @@ public class PermissionEntity extends ReactivePanacheMongoEntity {
             final Permission.Status status) {
         Uni<PermissionEntity> permissionUni = PermissionEntity.find("{'_id': ?1,'patientAfm': ?2}", new ObjectId(id), afm)
                 .firstResult();
-        System.out.println("test");
         return permissionUni
                 .onItem().transform(permission -> {
                     if (permission == null)

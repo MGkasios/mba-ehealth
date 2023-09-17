@@ -1,7 +1,6 @@
 package gr.hua.dit.gkasios.ehealth.permissions.api;
 
 import java.util.List;
-import java.util.Optional;
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
@@ -82,7 +81,7 @@ public class PermissionsResource {
         return PermissionEntity
                 .find("{'patientAfm': ?1, 'userAfm': ?2, 'status': ?3 }",
                         permission.getPatientAfm(), permission.getUserAfm(), Permission.Status.ACCEPTED)
-                .singleResultOptional().map(Optional::isPresent);
+                .count().map(num -> num > 0);
     }
 
     private String getAfm() {
